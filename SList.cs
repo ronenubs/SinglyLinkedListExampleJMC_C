@@ -38,6 +38,10 @@ namespace SinglyLinkedListExample
 
         public E Last()
         {
+            if (IsEmpty())
+            {
+                throw new EmptyListException();
+            }
             return tail.Element;
         }
 

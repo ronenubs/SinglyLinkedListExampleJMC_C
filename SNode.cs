@@ -17,7 +17,15 @@ namespace SinglyLinkedListExample
             this.Next = next;
         }
 
-        public E Element { get => element; set => element = value; }
-        public SNode<E> Next { get => next; set => next = value; }
+        public E Element 
+        { 
+            get { return element; }
+            set { element = value; }
+        }
+        public SNode<E> Next
+        {
+            get { return next; }
+            set { next = value; }
+        }
     }
 }
